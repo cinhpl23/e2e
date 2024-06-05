@@ -1,5 +1,5 @@
-name: Playwright Tests
- 
+name: My Playwright Tests
+
 on:
   push:
     branches:
@@ -7,15 +7,15 @@ on:
   pull_request:
     branches:
       - main
- 
+
 jobs:
   test:
     runs-on: ubuntu-latest
- 
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
- 
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
